@@ -1,0 +1,29 @@
+.select-box
+{
+    background: #3e4045;
+    border: 1px solid #404348;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #ffffff;
+    width: 250px;
+    outline: none;
+    border: none;
+}
+.select-font{
+    font-family: 'Inter' !important;
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    line-height: 130% !important;
+    color: rgba(255, 255, 255, 0.5) !important;
+}
+.select-box-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.label{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 130%;
+    margin-bottom: 8px;
+}

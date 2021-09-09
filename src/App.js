@@ -1,23 +1,37 @@
 import logo from './logo.svg';
 import './App.css';
+import react,{useMemo} from 'react';
 
 function App() {
+  var ratings = [
+    {
+      rating: 4,
+      name: 'arun'
+    },
+    {
+      rating: 2,
+      name: 'lavith'
+    }
+  ]
+  
+  const rating = (rate) => {
+    return Array(rate)
+    .fill(0)
+    .map((_,i)=> i+1)
+    .map((ids) => (
+      <span key={ids}>*</span>
+    ))
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        {ratings.map(ele => (
+        <div>
+
+          <p>{ele.name}</p>
+          {rating(ele.rating)}
+        </div>
+        
+        ))}
     </div>
   );
 }

@@ -1,0 +1,24 @@
+.group-filter{
+    background: #282B30;
+    border: 1px solid #404348;
+    box-sizing: border-box;
+    border-radius: 4px;
+    color: #fff;
+}
+.rule-group{
+    background: #282B30;
+    border: 1px solid #404348;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+.group-btn-section{
+    margin-top: 32px;
+}
+.group-btn-section:before{
+    position: relative;
+    content: '';
+    border-left: 1px dotted rgba(255, 255, 255, .5);
+    height: 32px;
+    top: -34px;
+    left: 32px;
+}
