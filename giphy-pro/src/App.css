@@ -1,0 +1,106 @@
+.App {
+  text-align: center;
+}
+
+.error {
+  color: #b50000;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+
+.input-field {
+  font-size: 20px;
+  vertical-align: middle;
+  transition: .5s;
+  border-width: 2px;
+  margin: 5px;
+  border-radius: 4px;
+}
+
+.input-field:focus {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.input-field:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.submit-btn {
+  background-color: rgb(19, 156, 235);
+  color: #fff;
+  padding: 6px 30px;
+  vertical-align: middle;
+  border: none;
+  font-size: 16px;
+  transition: .3s;
+  cursor: pointer;
+  border-radius: 4px;
+  margin: 5px;
+}
+
+.submit-btn:hover {
+  background-color: rgb(10, 130, 146);
+}
+
+.text-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+.gif-item {
+  flex-basis: 19%;
+  padding-top: 20px;
+}
+
+.gif-item a {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.gifContainer{
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 1 40%;
+  justify-content: center;
+}
+
+@media screen and (max-width: 992px) {
+  .gif-item {
+    flex-basis: 27%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .gif-item {
+    flex-basis: 48%;
+  }
+}
+
+.suggestionList{
+  list-style: none;
+  position: absolute;
+  width: 250px;
+  padding: 0;
+  z-index: 1;
+  background: white;
+  margin: 0;
+  margin-left: 5px;
+  border: 1px solid rgba(0,0,0,.1);
+}
+.suggestionList li{
+  padding: 5px;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  cursor: pointer;
+}
+
+.search-box{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+}
+.search-box .suggestion-box{
+  position: absolute;
+}
